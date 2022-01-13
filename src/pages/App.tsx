@@ -4,13 +4,14 @@
  * @Autor: liushuhao
  * @Date: 2021-07-03 16:22:52
  * @LastEditors: liushuhao
- * @LastEditTime: 2022-01-12 18:16:34
+ * @LastEditTime: 2022-01-13 10:44:18
  */
 import React, { useState } from "react";
 import Routes from "@routes/index";
 import { BrowserRouter as Router } from "react-router-dom";
 import { RecoilRoot } from "recoil";
 import Banner from '@components/Banner/Banner';
+// import Home from '@/pages/Home/Home'
 import { ConfigProvider,  DatePicker, message } from 'antd';
 import zhCN from 'antd/lib/locale/zh_CN';
 import 'moment/locale/zh-cn'
@@ -27,15 +28,8 @@ const App = () => {
   };
   return (
     <ConfigProvider locale={zhCN}>
-      <div >
-        <DatePicker onChange={handleChange} />
-        <div style={{ marginTop: 16 }}>
-          当前日期：{date ? date.format('YYYY年MM月DD日') : '未选择'}
-        </div>
-      </div>
       <RecoilRoot>
         <Router basename='/'>
-          <Banner />
           <Routes />
         </Router>
       </RecoilRoot>
