@@ -14,6 +14,7 @@
 ## 启动
 yarn  client:server
 ## 打包
+yarn client:prod
 
 
 

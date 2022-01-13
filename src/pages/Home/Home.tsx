@@ -1,6 +1,6 @@
 import "./Home.css";
 import React, { FC } from "react";
-import Swiper from '@components/Gallery/Gallery';
+import leftMenu from '@components/leftMenu/index';
 const Home: FC<{}> = () => {
   return (
     <>
