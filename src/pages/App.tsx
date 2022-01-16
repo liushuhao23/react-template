@@ -4,7 +4,7 @@
  * @Autor: liushuhao
  * @Date: 2021-07-03 16:22:52
  * @LastEditors: liushuhao
- * @LastEditTime: 2022-01-13 10:44:18
+ * @LastEditTime: 2022-01-16 23:29:28
  */
 import React, { useState } from "react";
 import Routes from "@routes/index";
@@ -21,11 +21,6 @@ import 'antd/dist/antd.css';
 moment.locale('zh-cn')
 
 const App = () => {
-  const [date, setDate] = useState(null);
-  const handleChange = (value: { format: (arg0: string) => any; }) => {
-    message.info(`您选择的日期是: ${value ? value.format('YYYY年MM月DD日') : '未选择'}`);
-    setDate(value);
-  };
   return (
     <ConfigProvider locale={zhCN}>
       <RecoilRoot>
