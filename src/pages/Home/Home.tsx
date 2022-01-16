@@ -4,7 +4,7 @@
  * @Autor: liushuhao
  * @Date: 2021-07-03 16:47:26
  * @LastEditors: liushuhao
- * @LastEditTime: 2022-01-13 16:16:04
+ * @LastEditTime: 2022-01-13 23:26:31
  */
 import "./Home.less";
 import React, { FC, useState } from "react";
@@ -28,7 +28,7 @@ const Home: FC<{}> = () => {
                 <LeftMenu ></LeftMenu>
               </div>
               <div className="content">
-                <Content res={{value}}></Content>
+                <Content></Content>
               </div>
           </TestContext.Provider>
         </div>
