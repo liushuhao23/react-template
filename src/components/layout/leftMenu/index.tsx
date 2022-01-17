@@ -12,7 +12,7 @@ import "./index.less";
 
 const LeftMenu: FC<{}> = () => {
   return (
-      <span>1111</span>
+      <span></span>
   );
 };
 

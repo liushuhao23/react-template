@@ -4,9 +4,11 @@
  * @Autor: liushuhao
  * @Date: 2022-01-12 19:16:43
  * @LastEditors: liushuhao
- * @LastEditTime: 2022-01-13 17:39:54
+ * @LastEditTime: 2022-01-13 23:08:25
  */
 import React, { useState, useRef, FC, useContext, useEffect } from "react";
+
+import Draggable from "@components/draggable";
 
 import "./index.less";
 
@@ -16,40 +18,10 @@ interface Res {
   value: string
 }
 
-const Content: FC<{res: Res}> = (props) => {
-  const { rs } = useContext(TestContext);
-  console.log(rs, '333');
-  console.log(props.res, 'props');
-  
-  // console.log(value, 'xjxjxw');
-  // const res: any = JSON.parse(value)
-  // console.log(res, 'xxx');
-  useEffect(() => {
-    console.log(3333333);
-  }, [])
-
-  let [a, setA] = useState('xxj')
-  let [c, setc] = useState(9)
-
-
-  useEffect(() => {
-    console.log(3333333);
-  }, [a])
-  let b = 1
-  
-
-  const change = () => {
-    //
-  }
-  console.log(a, 'xxxxx');
-  console.log(b, 'xhxh');
+const Content: FC<{}> = (props) => {
   return (
-    <div>
-      <span onClick={change}>这是子组件</span>
-      <span>{rs}</span>
-      <span>{a}</span>
-      <span>{b}</span>
-
+    <div className="draggableParent">
+      <Draggable></Draggable>
     </div>
   );
 };
